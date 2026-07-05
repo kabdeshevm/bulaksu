@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mood board Bulak Su</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        background:
+          linear-gradient(180deg, #f7fcff, #ffffff 48%, #eef8ff),
+          #f7fcff;
+      }
+
+      .mood-page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 42px 24px 72px;
+      }
+
+      .mood-hero {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        gap: 24px;
+        align-items: center;
+        min-height: 360px;
+        margin-bottom: 24px;
+        padding: 30px;
+        overflow: hidden;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .mood-hero h1 {
+        font-size: clamp(52px, 8vw, 92px);
+      }
+
+      .mood-product {
+        position: relative;
+        min-height: 320px;
+      }
+
+      .mood-product img:first-child {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 96%;
+        opacity: 0.68;
+      }
+
+      .mood-product img:last-child {
+        position: absolute;
+        right: 18%;
+        bottom: 6px;
+        height: 310px;
+        filter: drop-shadow(0 24px 32px rgba(14, 78, 130, 0.18));
+      }
+
+      .mood-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr 0.9fr;
+        gap: 16px;
+      }
+
+      .mood-card {
+        padding: 22px;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: 0 16px 36px rgba(11, 84, 151, 0.08);
+      }
+
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+
+      .swatch {
+        min-height: 126px;
+        padding: 12px;
+        color: white;
+        border-radius: var(--radius);
+        font-weight: 850;
+      }
+
+      .swatch small {
+        display: block;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.78);
+        font-weight: 700;
+      }
+
+      .swatch:nth-child(1) {
+        background: #063b82;
+      }
+
+      .swatch:nth-child(2) {
+        background: #0b66c3;
+      }
+
+      .swatch:nth-child(3) {
+        color: #063b82;
+        background: #d9efff;
+      }
+
+      .swatch:nth-child(3) small {
+        color: #54708a;
+      }
+
+      .swatch:nth-child(4) {
+        background: #22c7b8;
+      }
+
+      .swatch:nth-child(5) {
+        background: #c78d3a;
+      }
+
+      .type-sample strong {
+        display: block;
+        color: var(--blue-900);
+        font-size: 46px;
+        line-height: 1;
+      }
+
+      .type-sample span {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .visual-rules {
+        display: grid;
+        gap: 12px;
+      }
+
+      .visual-rules span {
+        display: block;
+        padding: 14px;
+        color: #24415f;
+        background: var(--ice);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        font-weight: 800;
+      }
+
+      .component-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      @media (max-width: 920px) {
+        .mood-hero,
+        .mood-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .swatches {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="mood-page">
+      <section class="mood-hero">
+        <div>
+          <p class="eyebrow">Mood board</p>
+          <h1>Чистота, лед, стекло</h1>
+          <p class="hero-lead">
+            Визуальная идея нового сайта: белое пространство, глубокий синий брендовый тон, холодные водные акценты и
+            небольшой теплый оттенок этикетки Bulak Su.
+          </p>
+        </div>
+        <div class="mood-product" aria-hidden="true">
+          <img src="../assets/report/water-splash.png" alt="" />
+          <img src="../assets/products/bottle-07.png" alt="" />
+        </div>
+      </section>
+
+      <section class="mood-grid" aria-label="Визуальная система">
+        <article class="mood-card">
+          <p class="eyebrow">Палитра</p>
+          <div class="swatches">
+            <span class="swatch">Deep Blue<small>#063B82</small></span>
+            <span class="swatch">Clean Blue<small>#0B66C3</small></span>
+            <span class="swatch">Ice<small>#D9EFFF</small></span>
+            <span class="swatch">Aqua<small>#22C7B8</small></span>
+            <span class="swatch">Label Gold<small>#C78D3A</small></span>
+          </div>
+        </article>
+
+        <article class="mood-card type-sample">
+          <p class="eyebrow">Типографика</p>
+          <strong>Bulak Su</strong>
+          <span>
+            Крупный заголовок для узнаваемости бренда, плотные карточные заголовки для каталога и спокойный текст для
+            доверия.
+          </span>
+        </article>
+
+        <article class="mood-card">
+          <p class="eyebrow">Компоненты</p>
+          <div class="component-row">
+            <a class="button button-primary" href="../index.html#products">Каталог</a>
+            <button class="chip is-active" type="button">18,9 л</button>
+            <button class="chip" type="button">ПЭТ</button>
+          </div>
+        </article>
+
+        <article class="mood-card">
+          <p class="eyebrow">Визуальные правила</p>
+          <div class="visual-rules">
+            <span>Много воздуха, чтобы тема чистоты считывалась сразу.</span>
+            <span>Синяя база поддерживает доверие и медицинскую аккуратность.</span>
+            <span>Золото используется дозированно как связь с этикеткой.</span>
+            <span>Продукция должна оставаться главным визуальным акцентом.</span>
+          </div>
+        </article>
+
+        <article class="mood-card">
+          <p class="eyebrow">Фотонастроение</p>
+          <img src="../assets/report/water-splash.png" alt="Водный всплеск" />
+        </article>
+
+        <article class="mood-card">
+          <p class="eyebrow">Тара</p>
+          <img src="../assets/report/glass-materials.png" alt="Стеклянная тара" />
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

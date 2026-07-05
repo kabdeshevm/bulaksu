@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Скелет сайта Bulak Su</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        background: #f5fbff;
+      }
+
+      .wire-page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 42px 24px 72px;
+      }
+
+      .wire-hero {
+        margin-bottom: 24px;
+        padding: 28px;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .browser-frame {
+        overflow: hidden;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .browser-top {
+        display: flex;
+        gap: 8px;
+        padding: 14px;
+        background: #eaf5fc;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .browser-top span {
+        width: 12px;
+        height: 12px;
+        background: #94a3b8;
+        border-radius: 50%;
+      }
+
+      .wire-section {
+        padding: 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .wire-header {
+        display: grid;
+        grid-template-columns: 150px 1fr 120px;
+        gap: 16px;
+        align-items: center;
+      }
+
+      .wire-nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+
+      .wire-hero-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 18px;
+        min-height: 330px;
+      }
+
+      .wire-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .wire-product {
+        display: grid;
+        grid-template-rows: 150px auto;
+        min-height: 290px;
+        border: 1px solid #cbddec;
+        border-radius: var(--radius);
+      }
+
+      .wire-product div:first-child {
+        background: #eaf5fc;
+        border-bottom: 1px solid #cbddec;
+      }
+
+      .wire-label {
+        display: inline-grid;
+        place-items: center;
+        min-height: 34px;
+        padding: 0 12px;
+        color: #31526f;
+        background: #edf4fa;
+        border: 1px solid #cbddec;
+        border-radius: var(--radius);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .block {
+        min-height: 42px;
+        background: repeating-linear-gradient(
+          -45deg,
+          #dcecf7,
+          #dcecf7 8px,
+          #eef7fd 8px,
+          #eef7fd 16px
+        );
+        border: 1px solid #cbddec;
+        border-radius: var(--radius);
+      }
+
+      .block.dark {
+        background: #0b66c3;
+        border-color: #0b66c3;
+      }
+
+      .block.tall {
+        min-height: 280px;
+      }
+
+      .block.medium {
+        min-height: 120px;
+      }
+
+      .wire-copy {
+        display: grid;
+        gap: 12px;
+        align-content: center;
+      }
+
+      .wire-copy .block:nth-child(1) {
+        width: 42%;
+      }
+
+      .wire-copy .block:nth-child(2) {
+        width: 82%;
+        min-height: 68px;
+      }
+
+      .wire-copy .block:nth-child(3) {
+        width: 68%;
+      }
+
+      .wire-copy .block:nth-child(4) {
+        width: 45%;
+        background: #063b82;
+        border-color: #063b82;
+      }
+
+      .wire-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      @media (max-width: 900px) {
+        .wire-header,
+        .wire-hero-grid,
+        .wire-products,
+        .wire-two {
+          grid-template-columns: 1fr;
+        }
+
+        .wire-nav {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wire-page">
+      <section class="wire-hero">
+        <p class="eyebrow">Скелет страницы</p>
+        <h1>Wireframe</h1>
+        <p class="hero-lead">
+          Схема показывает композицию будущей главной страницы до финальных цветов, изображений и текста.
+        </p>
+      </section>
+
+      <section class="browser-frame" aria-label="Вайрфрейм страницы">
+        <div class="browser-top"><span></span><span></span><span></span></div>
+
+        <div class="wire-section wire-header">
+          <div class="wire-label">Логотип</div>
+          <div class="wire-nav">
+            <span class="wire-label">Каталог</span>
+            <span class="wire-label">Качество</span>
+            <span class="wire-label">Доставка</span>
+            <span class="wire-label">Партнеры</span>
+            <span class="wire-label">Контакты</span>
+          </div>
+          <div class="wire-label">Заказать</div>
+        </div>
+
+        <div class="wire-section wire-hero-grid">
+          <div class="wire-copy">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block dark"></div>
+          </div>
+          <div class="block tall"></div>
+        </div>
+
+        <div class="wire-section">
+          <div class="wire-nav">
+            <span class="wire-label">Качество</span>
+            <span class="wire-label">Расчет</span>
+            <span class="wire-label">Доставка</span>
+            <span class="wire-label">Связь</span>
+            <span class="wire-label">FAQ</span>
+          </div>
+        </div>
+
+        <div class="wire-section">
+          <div class="wire-copy" style="margin-bottom: 18px">
+            <div class="block"></div>
+            <div class="block"></div>
+          </div>
+          <div class="wire-products">
+            <article class="wire-product"><div></div><div class="wire-section">0,3 л</div></article>
+            <article class="wire-product"><div></div><div class="wire-section">0,5 л</div></article>
+            <article class="wire-product"><div></div><div class="wire-section">0,7 л</div></article>
+            <article class="wire-product"><div></div><div class="wire-section">18,9/19 л</div></article>
+            <article class="wire-product"><div></div><div class="wire-section">ПЭТ</div></article>
+            <article class="wire-product"><div></div><div class="wire-section">Упаковка</div></article>
+          </div>
+        </div>
+
+        <div class="wire-section wire-two">
+          <div class="block medium"></div>
+          <div class="block medium"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

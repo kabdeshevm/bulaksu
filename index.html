@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bulak Su - родниковая вода с доставкой</title>
+    <meta
+      name="description"
+      content="Bulak Su: природная родниковая вода в стеклянной таре, ПЭТ-бутылках и бутылях 18,9 л с доставкой."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/brand/logo-header.svg" type="image/svg+xml" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Bulak Su">
+        <img src="assets/brand/logo-header.svg" alt="Bulak Su" />
+        <span>SOFT DRINKS</span>
+      </a>
+
+      <button class="icon-button nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#products">Продукция</a>
+        <a href="#quality">Качество</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#partners">Партнерам</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="header-order" type="button" data-open-order>
+        <i data-lucide="shopping-bag"></i>
+        <span>Заказать</span>
+        <strong data-cart-count>0</strong>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img class="hero-splash" src="assets/report/water-splash.png" alt="" />
+          <img class="hero-bottle hero-bottle-sm" src="assets/products/bottle-03.png" alt="" />
+          <img class="hero-bottle hero-bottle-lg" src="assets/products/bottle-07.png" alt="" />
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Родниковая вода из Западного Казахстана</p>
+          <h1 id="hero-title">Bulak Su</h1>
+          <p class="hero-lead">
+            Природная родниковая вода в стеклянной таре, ПЭТ-бутылках и бутылях 18,9 л для дома, офиса,
+            мероприятий и точек продаж.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">
+              <i data-lucide="droplets"></i>
+              <span>Смотреть каталог</span>
+            </a>
+            <button class="button button-ghost" type="button" data-open-order>
+              <i data-lucide="send"></i>
+              <span>Оставить заявку</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero-facts" aria-label="Ключевые преимущества">
+          <article>
+            <span>18,9 л</span>
+            <p>доставка домой и в офис</p>
+          </article>
+          <article>
+            <span>0,3-0,7 л</span>
+            <p>стеклянная тара для ежедневного формата</p>
+          </article>
+          <article>
+            <span>ПЭТ</span>
+            <p>легкие бутылки для дороги, спорта и розницы</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Быстрые разделы">
+        <a href="#quality"><i data-lucide="shield-check"></i><span>Контроль качества</span></a>
+        <a href="#calculator"><i data-lucide="calculator"></i><span>Расчет запаса</span></a>
+        <a href="#delivery"><i data-lucide="truck"></i><span>Доставка в Уральске</span></a>
+        <a href="#contacts"><i data-lucide="phone"></i><span>Связаться</span></a>
+      </section>
+
+      <section class="section section-products" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Каталог</p>
+          <h2 id="products-title">Вода и упаковка Bulak Su</h2>
+          <p>
+            Выберите удобный объем для ежедневного питья, семейного запаса, кулера, офиса или розничной продажи.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar" role="tablist" aria-label="Фильтр каталога">
+          <button class="chip is-active" type="button" role="tab" aria-selected="true" data-filter="all">Все</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-filter="home">Дом</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-filter="office">Офис</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-filter="retail">Ритейл</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-filter="packaging">Упаковка</button>
+        </div>
+
+        <div class="product-grid" data-product-grid>
+          <article class="product-card" data-category="home retail" data-product-id="glass-03">
+            <div class="product-visual">
+              <img src="assets/products/bottle-03.png" alt="Bulak Su 0,3 л" />
+            </div>
+            <div class="product-body">
+              <p class="product-kicker">Стекло</p>
+              <h3>Bulak Su 0,3 л</h3>
+              <p>Компактный формат для встреч, кафе, переговоров и мероприятий.</p>
+              <div class="product-meta">
+                <span>Негазированная</span>
+                <span>Индивидуальная подача</span>
+              </div>
+              <button class="button button-card" type="button" data-add-to-cart="glass-03">
+                <i data-lucide="plus"></i>
+                <span>В заявку</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="home retail" data-product-id="glass-05">
+            <div class="product-visual">
+              <img src="assets/products/bottle-05.png" alt="Bulak Su 0,5 л" />
+            </div>
+            <div class="product-body">
+              <p class="product-kicker">Стекло</p>
+              <h3>Bulak Su 0,5 л</h3>
+              <p>Универсальная бутылка для ежедневного употребления и продаж на полке.</p>
+              <div class="product-meta">
+                <span>Средний объем</span>
+                <span>Премиальная подача</span>
+              </div>
+              <button class="button button-card" type="button" data-add-to-cart="glass-05">
+                <i data-lucide="plus"></i>
+                <span>В заявку</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card product-card-accent" data-category="home retail office" data-product-id="glass-07">
+            <div class="product-visual">
+              <img src="assets/products/bottle-07.png" alt="Bulak Su 0,7 л" />
+            </div>
+            <div class="product-body">
+              <p class="product-kicker">Стекло</p>
+              <h3>Bulak Su 0,7 л</h3>
+              <p>Больший формат в стекле для ресторанов, офисных зон и семейного стола.</p>
+              <div class="product-meta">
+                <span>0,7 л</span>
+                <span>Стеклянная тара</span>
+              </div>
+              <button class="button button-card" type="button" data-add-to-cart="glass-07">
+                <i data-lucide="plus"></i>
+                <span>В заявку</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card product-card-large" data-category="home office" data-product-id="bottle-189">
+            <div class="product-visual">
+              <img class="product-photo product-photo-189" src="assets/products/bottle-189-cutout.png" alt="Bulak Su 18,9 л" />
+            </div>
+            <div class="product-body">
+              <p class="product-kicker">Доставка</p>
+              <h3>Бутыль 18,9 / 19 л</h3>
+              <p>Большая бутыль для кулера, семейного запаса и регулярной доставки в офис.</p>
+              <div class="product-meta">
+                <span>Дом и офис</span>
+                <span>Обмен тары</span>
+              </div>
+              <button class="button button-card" type="button" data-add-to-cart="bottle-189">
+                <i data-lucide="plus"></i>
+                <span>В заявку</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="retail packaging home" data-product-id="pet-line">
+            <div class="product-visual">
+              <img class="product-photo product-photo-pet" src="assets/products/pet-bottles-photo.png" alt="Пластиковые бутылки Bulak Su" />
+            </div>
+            <div class="product-body">
+              <p class="product-kicker">ПЭТ</p>
+              <h3>Пластиковые бутылки</h3>
+              <p>Легкая тара для тренировок, поездок, мероприятий и ежедневного питья вне дома.</p>
+              <div class="product-meta">
+                <span>Удобно брать с собой</span>
+                <span>Для спорта и поездок</span>
+              </div>
+              <button class="button button-card" type="button" data-add-to-cart="pet-line">
+                <i data-lucide="plus"></i>
+                <span>В заявку</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="packaging retail office" data-product-id="packaging">
+            <div class="product-visual product-visual-text">
+              <div class="packaging-text" aria-hidden="true">
+                <span>12 шт</span>
+                <span>9 шт</span>
+                <span>6 шт</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <p class="product-kicker">На заказ</p>
+              <h3>Пластиковая упаковка</h3>
+              <p>Доступны упаковки по 12, 9 и 6 штук. Количество и формат уточняются при заявке.</p>
+              <div class="product-meta">
+                <span>12 шт</span>
+                <span>9 шт</span>
+                <span>6 шт</span>
+              </div>
+              <button class="button button-card" type="button" data-add-to-cart="packaging">
+                <i data-lucide="plus"></i>
+                <span>В заявку</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-calculator" id="calculator" aria-labelledby="calculator-title">
+        <div class="calc-panel">
+          <div>
+            <p class="eyebrow">Калькулятор</p>
+            <h2 id="calculator-title">Запас воды на неделю</h2>
+            <p>
+              Рассчитайте примерный объем воды для семьи, команды или офиса на несколько дней.
+            </p>
+          </div>
+          <form class="calculator" data-calculator>
+            <label>
+              <span>Людей</span>
+              <input type="range" min="1" max="30" value="4" data-calc-people />
+              <output data-people-output>4</output>
+            </label>
+            <label>
+              <span>Дней</span>
+              <input type="range" min="1" max="14" value="7" data-calc-days />
+              <output data-days-output>7</output>
+            </label>
+            <label>
+              <span>Литров на человека</span>
+              <input type="range" min="1" max="3" step="0.5" value="2" data-calc-liters />
+              <output data-liters-output>2</output>
+            </label>
+            <div class="calc-result">
+              <span>Нужно примерно</span>
+              <strong data-calc-total>56 л</strong>
+              <p data-calc-recommendation>3 бутыли 18,9 л или 80 бутылок 0,7 л</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-quality" id="quality" aria-labelledby="quality-title">
+        <div class="quality-layout">
+          <div class="quality-copy">
+            <p class="eyebrow">Источник и контроль</p>
+            <h2 id="quality-title">Природный вкус и контроль качества</h2>
+            <p>
+              Bulak Su сохраняет мягкий вкус родниковой воды и проходит контроль перед розливом в стеклянную,
+              пластиковую и оборотную тару.
+            </p>
+            <div class="quality-tabs" role="tablist" aria-label="Информация о качестве">
+              <button class="is-active" type="button" role="tab" aria-selected="true" data-quality-tab="source">
+                Источник
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-quality-tab="composition">Состав</button>
+              <button type="button" role="tab" aria-selected="false" data-quality-tab="eco">Тара</button>
+            </div>
+            <article class="quality-note" data-quality-panel>
+              <h3>Родник “Ақбұлақ”</h3>
+              <p>
+                Вода Bulak Su связана с родником “Ақбұлақ” в Таскалинском районе Западно-Казахстанской области.
+                Источник ценят за чистоту, мягкий вкус и природное происхождение.
+              </p>
+            </article>
+          </div>
+          <div class="quality-card">
+            <img src="assets/report/glass-materials.png" alt="Стеклянная тара Bulak Su" />
+            <div class="mineral-grid" aria-label="Показатели воды">
+              <span><strong>Fe</strong><small>железо</small></span>
+              <span><strong>Mn</strong><small>марганец</small></span>
+              <span><strong>Cl</strong><small>хлориды</small></span>
+              <span><strong>3,07</strong><small>жесткость</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-delivery" id="delivery" aria-labelledby="delivery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Доставка</p>
+          <h2 id="delivery-title">Доставка воды в удобном формате</h2>
+          <p>Выберите нужный объем, оставьте телефон, и менеджер уточнит адрес, график и количество бутылей.</p>
+        </div>
+        <div class="delivery-grid">
+          <article class="delivery-card">
+            <i data-lucide="home"></i>
+            <h3>Для дома</h3>
+            <p>Регулярная доставка больших бутылей, запас на неделю и быстрый повтор заказа.</p>
+          </article>
+          <article class="delivery-card">
+            <i data-lucide="building-2"></i>
+            <h3>Для офиса</h3>
+            <p>Поставка воды для кулеров, переговорных, ресепшена и корпоративных мероприятий.</p>
+          </article>
+          <article class="delivery-card">
+            <i data-lucide="store"></i>
+            <h3>Для точек продаж</h3>
+            <p>Стеклянная тара, ПЭТ-форматы и упаковка для партнерских заказов.</p>
+          </article>
+        </div>
+        <div class="map-band">
+          <div>
+            <p class="eyebrow">Адрес</p>
+            <h3>г. Уральск, ул. Мухита 112, офис 37</h3>
+            <p>По вопросам доставки, оптовых заказов и наличия продукции свяжитесь с менеджером Bulak Su.</p>
+          </div>
+          <a class="button button-ghost" href="https://yandex.kz/maps/-/CCU6IAxroC" target="_blank" rel="noreferrer">
+            <i data-lucide="map-pin"></i>
+            <span>Открыть карту</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-partners" id="partners" aria-labelledby="partners-title">
+        <div class="partner-shell">
+          <div class="section-heading align-left">
+            <p class="eyebrow">Партнерам</p>
+            <h2 id="partners-title">Поставка воды для бизнеса</h2>
+            <p>Bulak Su подходит для офисов, магазинов, кафе, спортивных залов, турниров и городских мероприятий.</p>
+          </div>
+          <div class="persona-tabs" role="tablist" aria-label="Сценарии клиентов">
+            <button class="is-active" type="button" data-persona="office">Офис</button>
+            <button type="button" data-persona="retail">Розница</button>
+            <button type="button" data-persona="events">События</button>
+          </div>
+          <article class="persona-panel" data-persona-panel>
+            <span>Офис</span>
+            <h3>Еженедельная поставка 18,9 л</h3>
+            <p>
+              Бутыли для кулеров, резервный запас, регулярная доставка и согласованный график поставок.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Частые вопросы</h2>
+        </div>
+        <div class="faq-list" data-faq>
+          <details open>
+            <summary>Можно ли заказать воду 18,9/19 л для офиса?</summary>
+            <p>Да. Оставьте заявку на сайте или свяжитесь с менеджером, чтобы уточнить количество и график доставки.</p>
+          </details>
+          <details>
+            <summary>Какие варианты упаковки доступны?</summary>
+            <p>Для заказа доступны упаковки по 12, 9 и 6 штук. Актуальное наличие и объемы уточняются у менеджера.</p>
+          </details>
+          <details>
+            <summary>Можно ли заказать воду для мероприятия?</summary>
+            <p>Да. Для спортивных турниров, встреч и городских событий можно подобрать стеклянные или ПЭТ-форматы.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section-contacts" id="contacts" aria-labelledby="contacts-title">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Контакты</p>
+            <h2 id="contacts-title">Оставьте заявку на Bulak Su</h2>
+            <p>Менеджер уточнит объем, адрес, график доставки и наличие тары.</p>
+            <div class="contact-links">
+              <a href="tel:+77007700021"><i data-lucide="phone"></i><span>+7 700 770 00 21</span></a>
+              <a href="tel:+77053411975"><i data-lucide="headphones"></i><span>+7 705 341 19 75</span></a>
+              <a href="mailto:info@midsu.kz"><i data-lucide="mail"></i><span>info@midsu.kz</span></a>
+              <a href="https://www.instagram.com/bulaksuwater/" target="_blank" rel="noreferrer">
+                <i data-lucide="instagram"></i>
+                <span>@bulaksuwater</span>
+              </a>
+            </div>
+          </div>
+          <form class="lead-form" data-lead-form>
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Ваше имя" required />
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 ___ ___ __ __" required />
+            </label>
+            <label>
+              <span>Что нужно</span>
+              <select name="need">
+                <option>Вода 18,9/19 л</option>
+                <option>Стеклянная вода 0,3-0,7 л</option>
+                <option>ПЭТ-бутылки</option>
+                <option>Пластиковая упаковка</option>
+              </select>
+            </label>
+            <button class="button button-primary" type="submit">
+              <i data-lucide="send"></i>
+              <span>Отправить заявку</span>
+            </button>
+            <p class="form-status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/brand/logo-blue.svg" alt="Bulak Su" />
+        <p>Родниковая вода Bulak Su для дома, офиса, спорта и бизнеса.</p>
+      </div>
+      <nav aria-label="Нижняя навигация">
+        <a href="#products">Каталог</a>
+        <a href="#quality">Качество</a>
+        <a href="#delivery">Доставка</a>
+        <a href="docs/structure.html">Структура</a>
+        <a href="docs/moodboard.html">Mood board</a>
+      </nav>
+    </footer>
+
+    <aside class="order-drawer" aria-hidden="true" data-order-drawer>
+      <div class="drawer-backdrop" data-close-order></div>
+      <section class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+        <div class="drawer-header">
+          <div>
+            <p class="eyebrow">Заявка</p>
+            <h2 id="drawer-title">Ваш заказ</h2>
+          </div>
+          <button class="icon-button" type="button" aria-label="Закрыть" data-close-order>
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="drawer-items" data-drawer-items></div>
+        <form class="drawer-form" data-order-form>
+          <label>
+            <span>Телефон</span>
+            <input type="tel" placeholder="+7 ___ ___ __ __" required />
+          </label>
+          <label>
+            <span>Адрес доставки</span>
+            <input type="text" placeholder="Улица, дом, офис" />
+          </label>
+          <button class="button button-primary" type="submit">
+            <i data-lucide="message-circle"></i>
+            <span>Отправить менеджеру</span>
+          </button>
+          <a class="whatsapp-link" href="https://wa.me/77007700021" target="_blank" rel="noreferrer">
+            WhatsApp: +7 700 770 00 21
+          </a>
+          <p class="form-status" aria-live="polite" data-order-status></p>
+        </form>
+      </section>
+    </aside>
+  </body>
+</html>
